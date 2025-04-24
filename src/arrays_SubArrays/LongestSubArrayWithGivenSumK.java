@@ -1,4 +1,4 @@
-package arrays;
+package arrays_SubArrays;
 
 import java.util.*;
 
@@ -30,6 +30,7 @@ public class LongestSubArrayWithGivenSumK {
 			sum += arr[right];
 			while(sum > k) {
 				sum -= arr[left];
+				left++;
 			}
 			if(sum == k) {
 				length = Math.max(sum, right - left+1);
