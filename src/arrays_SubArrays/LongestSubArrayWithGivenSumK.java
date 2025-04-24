@@ -49,9 +49,9 @@ public class LongestSubArrayWithGivenSumK {
 		long sum = 0;
 		for(int i = 0; i < n;i++) {
 			sum += arr[i];
-			if(prefixMap.containsKey(sum)) {
-				length = Math.max(length, i+1);
-			}
+			if(sum == k){
+				length = Math.max(length,i+1);  
+	            }
 			long rem = sum - k;
 			if(prefixMap.containsKey(rem)) {
 				int len = i - prefixMap.get(rem);
