@@ -14,9 +14,9 @@ public class checkArrayisSortedAndRoated {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] array = {3,4,5,1,2};
-		int[] array1 = {3,4,5,1,3};
+		int[] array1 = {3,4,5,1,4};
 		
-		System.out.println(helper(array1));
+		System.out.println(helper(array));
 
 	}
 
